@@ -17,7 +17,7 @@
 
 
     <!-- Base package to search for spring beans -->
-    <context:component-scan base-package="org.academiadecodigo.charlies"/>
+    <context:component-scan base-package="org.academiadecodigo.lavidaloca"/>
 
     <import resource="persistence.xml"/>
 
