@@ -3,10 +3,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.academiadecodigo.charlies</groupId>
-    <artifactId>charlies</artifactId>
+    <artifactId>lavidaloca</artifactId>
     <version>0.0.1</version>
     <packaging>war</packaging>
-    <name>Temos de mudar isto ASAP!</name>
+    <name>La Vida Loca</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -93,7 +93,7 @@
 
     <build>
 
-        <finalName>MUDAR ISTO ASAP!!!</finalName>
+        <finalName>La Vida Loca</finalName>
 
         <plugins>
             <plugin>
@@ -113,7 +113,7 @@
                 <configuration>
                     <url>http://localhost:8080/manager/text</url>
                     <server>tomcat</server>
-                    <path>/charlies</path>
+                    <path>/lavidaloca</path>
                 </configuration>
             </plugin>
 
