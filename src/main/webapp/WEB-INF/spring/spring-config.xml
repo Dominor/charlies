@@ -10,12 +10,9 @@
     <!-- User @Controller, @Service annotations -->
     <mvc:annotation-driven />
 
-
     <!-- Base package to search for spring beans -->
     <context:component-scan base-package="org.academiadecodigo.lavidaloca"/>
 
-    <import resource="persistence.xml"/>
-
-    <!-- Não esquecer isto amigos!!!!! <import resource="presentation.xml"/> -->
+    <import resource="presentation.xml"/>
 
 </beans>

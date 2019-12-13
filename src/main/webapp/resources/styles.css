@@ -1,0 +1,263 @@
+/* general*/
+body{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    letter-spacing: 0.6px;
+    color: white;
+}
+h2, h3, p, legend, form {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+h1, h2, h3, p {
+    text-align: center;
+}
+legend, .label-vida-loca  {
+    font-size: 1.5rem;
+}
+h2 {
+    font-size: 1.2rem;
+}
+h3 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px red;
+    letter-spacing: 1px;
+}
+form {
+    padding: 30px 0 60px 0;
+}
+fieldset {
+    padding-bottom: 40px;
+}
+img {
+    width: 100%;
+}
+.btn-vida-loca{
+    text-align: center;
+}
+
+.btn-vida-loca a,
+.btn-vida-loca button {
+    padding: 15px 50px;
+    border: 1px solid white;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    border-radius: 40px;
+    text-shadow: 2px 2px 4px red;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 0px red;
+    -moz-box-shadow: 0px 0px red;
+    box-shadow: 0px 0px red;
+    background-color: transparent;
+}
+
+.btn-vida-loca a:hover,
+.btn-vida-loca button:hover{
+    background-color: white;
+    color: red;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 8px 14px red;
+    -moz-box-shadow: 8px 14px red;
+    box-shadow: 8px 14px red;
+}
+
+.inpt-vida-loca {
+    border: 1px solid white;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background-color: transparent;
+    margin: 0 0 20px 0;
+}
+
+.img-background{
+    width: 100%;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.experiences-page .img-background{
+    background-image: url("img/img5.jpg");
+}
+.perfil-page .img-background{
+    background-image: url("img/img2.jpg");
+}
+.user-page .img-background{
+    background-image: url("img/img4.jpg");
+}
+
+
+
+
+/* homepage */
+.background-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    z-index: -1;
+}
+.homepage .background-wrapper {
+    height: 100vh;
+    overflow: hidden;
+}
+.background-wrapper::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #000000, grey);
+    opacity: .7;
+}
+.logo-homepage {
+    position: relative;
+    width: 600px;
+    height: auto;
+    margin: 80px auto 80px auto;
+    text-align: center;
+}
+
+nav.btn-vida-loca {
+    text-align: center;
+    display: block;
+    position: relative;
+    margin: 80px auto 40px auto;
+}
+
+/* experience page */
+.logo-small {
+    width: 200px;
+    margin: 40px auto 35px auto;
+}
+
+.card-experience {
+    border: none;
+    box-shadow: 5px 5px red;
+    width: 100%;
+}
+
+.row-experiences {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.col-experience {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.col-experience h2 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px red;
+    font-weight: 100;
+}
+
+.col-experience .form-check-input {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.col-experience .form-check-label {
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px red;
+    -moz-box-shadow: 0px 0px red;
+    box-shadow: 0px 0px red;
+    -webkit-transition:  border 0.1s ease-in-out; 
+    transition: border 0.1s ease-in-out;
+}
+
+.col-experience .form-check-label:hover {
+    border: 1px solid white;
+    -webkit-transition:  border 0.1s ease-in-out; 
+    transition: border 0.1s ease-in-out;
+}
+
+.col-experience .form-check-label:hover img::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.col-experience input[type="radio"]:checked+label {
+    -webkit-box-shadow: 12px 10px red;
+    -moz-box-shadow: 12px 10px red;
+    box-shadow: 12px 10px red;
+    border: 1px solid white;
+    -webkit-transition: box-shadow 0.3s ease-in-out; 
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.experiences-page .form-group {
+    margin-bottom: 0;
+}
+
+.experiences-page .btn-vida-loca {
+    margin-top: 40px;
+}
+
+
+/* Perfil */
+.perfil-form {
+    margin: 0 auto;
+}
+
+.perfil-form .btn-vida-loca {
+    margin-top: 40px;
+}
+
+
+/* User */
+.user-page .container {
+    padding-top: 40px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    -webkit-box-shadow: 12px 10px red;
+    -moz-box-shadow: 12px 10px red;
+    box-shadow: 12px 10px red;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+}
